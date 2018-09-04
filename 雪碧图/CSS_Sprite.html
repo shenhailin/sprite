@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		 <style>
-        div{
-            width:480px;
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            width: 480px;
             height: 480px;
             background: url("img/erik_ce204002.jpg");
         }
     </style>
-	</head>
-	<body>
-		<div id="ani"></div>
-		<script>
- window.onload=function(){
-     var ani=document.getElementById("ani");
-     var Y = 480;
+</head>
 
-     function gif() {
-         ani.style.backgroundPositionY = '-' + Y + 'px';
-         Y>8160?Y=480:Y+=480;
-     }
-         setInterval(gif, 100);
-     }
+<body>
+    <div id="ani"></div>
+    <script>
+        window.onload = function () {
+            var ani = document.getElementById("ani");
+            var Y = 480;
 
-</script>
-	</body>
+            function gif() {
+                ani.style.backgroundPositionY = '-' + Y + 'px';
+                Y > 8160 ? Y = 480 : Y += 480;
+            }
+            setInterval(gif, 100);
+        }
+
+    </script>
+</body>
+
 </html>
