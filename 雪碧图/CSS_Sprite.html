@@ -14,26 +14,17 @@
 	<body>
 		<div id="ani"></div>
 		<script>
-//  window.onload=function(){
-//      var ani=document.getElementById("ani");
-//      var Y = 480;
-//
-//      function gif() {
-//          ani.style.backgroundPositionY = '-' + Y + 'px';
-//          Y>8160?Y=480:Y+=480;
-//      }
-//          setInterval(gif, 100);
-//      }
-    
-    window.onload = function(){
-    	var ani = document.querySelector("#ani");
-    	var y = 0;
-    	function gif(){
-    		ani.style.backgroundPositionY = "-"+y+"px";
-    		y>8160?y=0:y+=480;
-    	}
-    	setInterval(gif,100);
-    }
+ window.onload=function(){
+     var ani=document.getElementById("ani");
+     var Y = 480;
+
+     function gif() {
+         ani.style.backgroundPositionY = '-' + Y + 'px';
+         Y>8160?Y=480:Y+=480;
+     }
+         setInterval(gif, 100);
+     }
+
 </script>
 	</body>
 </html>
